@@ -1,0 +1,12 @@
+- Is a container that either has something or doesn't
+- Used to avoid NullPointerException
+
+Optional:
+    private static Optional<Integer> getInteger() {
+        return Optional.ofNullable(2);
+    }
+
+    Optional<Integer> integer = getInteger();
+    integer.orElse(0);
+
+    integer.map('Transform the original type of the Optional into another type via lambda');
