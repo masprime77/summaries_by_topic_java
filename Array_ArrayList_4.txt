@@ -8,6 +8,13 @@ Array:
 
     - String[] friendsArray = {"Martin", "Diusne", "Felipe", "Sergio"}
 
+    - friendsArray[0]
+    - friendsArray.length
+    * No growth
+    - friendsArray[0] = "Carl"
+    * No removing of elements
+    * to print loop with for
+
 
 
 ArrayList:
@@ -21,3 +28,10 @@ ArrayList:
 
     - ArrayList<String> friendsArrayList =
         new ArrayList<>(Arrays.asList("Martin", "Diusne", "Felipe", "Sergio");
+
+    - friendsArrayList.get(0)
+    - friendsArrayList.size()
+    - friendsArrayList.add("Pablo") // Dynamic growth
+    - friendsArrayList.set(0, "Carl") | friendsArrayList.set(index, element)
+    - friendsArrayList.remove(2); | friendsArrayList.remove(index or element);
+    - System.out.print(friendsArrayList)
