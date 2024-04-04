@@ -1,16 +1,20 @@
 try {
-    // Code that may cause an exception
+    - Code that may cause an exception
 } catch (TypeOfException toe) {
-    // Code that we want to execute if we catch this exception
+    - Code that we want to execute if we catch this exception
 } catch (TypeOfException toe) {
-    // Code that we want to execute if we catch this exception
+    - Code that we want to execute if we catch this exception
 } finally {
     * finally is not necessary
-    // Whether there was an Exception or not, this code will be executed
-    // NO MATTER WHAT, even if there's a return statement
-    // Finally override other returns
-    // Not very used
+
+    - Whether there was an Exception or not, this code will be executed
+
+    - NO MATTER WHAT, even if there's a return statement
+
+    - Finally override other returns
+
+    - Not very used
 }
 
 Usually:
-    catch (Exception e)
+    - catch (Exception e)
