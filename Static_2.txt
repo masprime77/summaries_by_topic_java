@@ -1,3 +1,14 @@
-In a Nutshell:
-    - Static means: Class-method
-    - Non-static means: Object-method
+Static classes:
+    In a Nutshell:
+        - Static means: Class-method
+        - Non-static means: Object-method
+
+    - I cannot reference a non-static (variable) in a static (method)
+    - You can use a class-method through an object (Discouraged!!)
+
+Static variables:
+    - Accesible via the class
+    - Usually for constants
+
+- non-static: different for each object
+- static: general for all the object of a class
