@@ -1,0 +1,31 @@
+
+- It's like creating a subclass with its own implementation. Only that you're going to use it one time.
+
+Example:
+
+    public class Example {
+
+        public static void main (String[] args) {
+
+            Animal animal = new Animal();
+            animal.makeNoise();
+
+            Animal bigfoot = new Animal() {
+                public void makeNoise() {
+                    System.out.println("roar");
+                }
+            };
+
+        }
+
+    }
+
+Example 2 (creating a method of an Interface):
+
+    Runnable runnable = new Runnable() {
+        public void run() {
+            System.out.println("Hello");
+        }
+    };
+
+    - In this case, we are like crating a class that implements the Runnable interface.
