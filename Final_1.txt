@@ -1,0 +1,10 @@
+Final Classes:
+    - prevents other class to extend from the final class
+
+Final Methods:
+    - Cannot Override final methods in children's classes
+
+Final Variables:
+    - Assign value only one time
+    - Cannot overwrite
+    - Useful to create constants "public static final double PI = 3.1416;"; after class, outside methods
