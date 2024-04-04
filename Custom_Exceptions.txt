@@ -1,0 +1,51 @@
+- They're classes that extend the class Exception
+
+Example:
+    public class CustomException extends Exception {
+
+    }
+
+    public class Main {
+
+        public static void main(String[] args) throws CustomException {
+            validAge(3);
+        }
+
+
+       public static void validAge(int age) throws CustomException {
+            if (age < 0) {
+                throw new CustomException();
+            }
+        }
+
+    }
+
+    - the 'throws CustomException' is aggregated only if the class extends 'Exception'
+        or if there's no try and catch statement
+
+Example with a custom message:
+    public class CustomException extends Exception {
+
+        public CustomException(String message) {
+            super(message);
+        }
+
+    }
+
+    public class Main {
+
+        public static void main(String[] args) throws CustomException {
+            validAge(3);
+        }
+
+
+       public static void validAge(int age) throws CustomException {
+            if (age < 0) {
+                throw new CustomException("Invalid age");
+            }
+        }
+
+    }
+
+    * Now that the 'CustomException' class has a constructor extended from the Exception, the call of the Exception
+        has to have a message or have a no args constructor (public CustomException(){}
