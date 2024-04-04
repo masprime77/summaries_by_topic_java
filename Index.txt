@@ -1,6 +1,7 @@
 1. Final
 2. Static
 3. Exception Handling
-4. Array vs ArrayList
+4. Array vs. ArrayList
 5. Optionals
 6. Custom Exceptions
+7. Records
