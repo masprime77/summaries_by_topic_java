@@ -1,0 +1,35 @@
+Abstract Classes:
+    - They're classes from which you cannot create objects. I cannot create an Animal, but a Cat is posible.
+    - For example you cannot create an Animal (parent class), but you can create a Cat (child class).
+
+        public abstract class Animal {
+            int age;
+            String name;
+        }
+
+        public class Cat extends Animal {
+
+        }
+
+Abstract Methods:
+    - Similar to abstract classes, they're methods that cannot be used or implemented in the class from they are from.
+    - For example an abstract method in Animal must be implemented in Cat.
+    - It forces the children classes to implement the method.
+
+        public abstract class Animal {
+            int age;
+            String name;
+
+            public abstract void makeNoise();
+        }
+
+        public class Cat extends Animal {
+
+            @Override
+            public void makeNoise() {
+                System.out.print("Meow");
+            }
+        }
+
+The difference between abstract class and interface is that you can only extend one other class,
+    but unlimited interfaces.

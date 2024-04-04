@@ -48,4 +48,4 @@ Example with a custom message:
     }
 
     * Now that the 'CustomException' class has a constructor extended from the Exception, the call of the Exception
-        has to have a message or have a no args constructor (public CustomException(){}
+        has to have a message or have a no args constructor 'public CustomException(){}'.

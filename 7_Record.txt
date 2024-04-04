@@ -1,14 +1,14 @@
 Example:
     - public record RecordExample (String name, int age){}
 
-- it's like a class that only holds data
-- a Record is a class with prefabricated methods and constructors
-- a Record is inmutable (similar to final)
-- Records cannot extend other class (cause it already extends the Record class)
-- other than that a Record operates just like a normal class
+- It's like a class that only holds data.
+- A Record is a class with prefabricated methods and constructors.
+- A Record is inmutable (similar to final).
+- Records cannot extend other class (cause it already extends the Record class).
+- Other than that a Record operates just like a normal class.
 
 - Prefabricated:
-    + a constructor that saves all the args of the record
-    + a 'get' method for all the args
-    + a 'toString' method
-    + an 'equals' implementation
+    + A constructor that saves all the args of the record.
+    + A 'get' method for all the args
+    + A 'toString' method
+    + An 'equals' implementation

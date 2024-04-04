@@ -1,10 +1,10 @@
 Array:
     - can hold 'primitives' and 'Objects' (basically everything)
         + primitives: 'int', 'double', ...
-        + Objects: 'Integer', 'Double', ...
+        + objects: 'Integer', 'Double', ...
 
     - String[] friendsArray = new String[4]
-        + this Array has exactly four items, now they're null. It's not variable in size
+        + This Array has exactly four items, now they're null. It's not variable in size.
 
     - String[] friendsArray = {"Martin", "Diusne", "Felipe", "Sergio"}
 
@@ -19,13 +19,12 @@ Array:
 
 ArrayList:
     - can hold 'Objects'
-            + Objects: 'Integer', 'Double', ...
+            + objects: 'Integer', 'Double', ...
 
     - ArrayList<String> friendsArrayList = new ArrayList<>();
-        + this List is variable in size
+        + This List is variable in size.
 
     * for ArrayList is necessary "import java.util.ArrayList"
-
     - ArrayList<String> friendsArrayList =
         new ArrayList<>(Arrays.asList("Martin", "Diusne", "Felipe", "Sergio");
 
