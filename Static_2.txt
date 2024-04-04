@@ -11,4 +11,4 @@ Static variables:
     - Usually for constants
 
 - non-static: different for each object
-- static: general for all the object of a class
+- static: general for all the objects of a class
