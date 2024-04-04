@@ -1,2 +1,3 @@
-- Static means in a nutshell: Class-method
-- Non-static means: Object-method
+In a Nutshell:
+    - Static means: Class-method
+    - Non-static means: Object-method
