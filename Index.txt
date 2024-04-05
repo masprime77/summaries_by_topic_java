@@ -8,3 +8,4 @@
 8. Abstract Classes and Methods
 9. Anonymous Inner Classes
 10. Lambdas
+11. Generics

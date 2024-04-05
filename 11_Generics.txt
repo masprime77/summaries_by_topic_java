@@ -1,0 +1,70 @@
+Generic classes:
+
+    - It is useful when a class is going to be used by a bunch of Objects from different types.
+    - In the following example, I created a printer. Making it generic allows printing whatever type of object.
+
+    Example:
+        public class Printer <T> { // T represents the type of the thing.
+            T thingToPrint;
+
+            public Printer (T thingToPrint) {
+                this.thingToPrint = thingToPrint;
+            }
+
+            public void print() {
+                System.out.println(thingToPrint);
+            }
+
+        }
+
+        public class Main {
+
+            Printer<Integer> integerPrint = new Printer<>(3);
+            integerPrint.print();
+
+            Printer<String> stringPrint = new Printer<>("Hello");
+            stringPrint.print();
+
+        }
+
+    - You can be more specific in regard to what type of object is going to be cast.
+    - In this example, we want the printer only to be able to print numbers.
+
+    Example:
+        public class Printer <T extends Number> { // T represents the type of the thing. It has to be a children's class of Number.
+                T thingToPrint;
+
+                public Printer (T thingToPrint) {
+                    this.thingToPrint = thingToPrint;
+                }
+
+                public void print() {
+                    System.out.println(thingToPrint);
+                }
+
+            }
+
+            public class Main {
+
+                Printer<Integer> integerPrint = new Printer<>(3);
+                integerPrint.print();
+
+                Printer<Double> doublePrint = new Printer<>(11.4);
+                doublePrint.print();
+
+            }
+
+Generic methods:
+
+    Example:
+        private static <T, V> void shout (T thingToShout, V otherThing) {
+            System.out.println(thingToShout + "!!!");
+            System.out.println(otherThing + "???");
+        }
+
+Wildcards:
+
+    Example:
+        private static void printList(List<? extends Number> myList) { // '?' is an unknown type parameter
+            System.out.println(myList);
+        }
