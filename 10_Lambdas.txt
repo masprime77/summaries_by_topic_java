@@ -11,7 +11,6 @@ Example:
 
         public static void main(String[] args) {
 
-            Object object = new Object();
             Interface lambdaExample = () -> System.out.println("Hello")
             doThing(lambdaExample);
 
