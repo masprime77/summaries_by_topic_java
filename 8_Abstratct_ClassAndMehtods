@@ -12,6 +12,7 @@ Abstract Classes:
         }
 
 Abstract Methods:
+    - They're methods that doesn't have any implementation. for example methods in interfaces are abstract
     - Similar to abstract classes, they're methods that cannot be used or implemented in the class from they are from.
     - For example an abstract method in Animal must be implemented in Cat.
     - It forces the children classes to implement the method.
