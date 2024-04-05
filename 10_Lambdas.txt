@@ -1,0 +1,25 @@
+- Its only usable by functional interfaces. In other words, interfaces with only one method.
+- Allows an implementation of a method from an interface to be saved like an object.
+- Is like an Anonymous class, only that resumed. It's used normally when the implementation uses simple logic.
+
+Example:
+    public interface Interface {
+        void method();
+    }
+
+    public class Main {
+
+        public static void main(String[] args) {
+
+            Object object = new Object();
+            Interface lambdaExample = () -> System.out.println("Hello")
+            doThing(lambdaExample);
+
+        }
+
+        public void doThing(Interface interface) {
+            interface.method();
+        }
+
+
+    }
