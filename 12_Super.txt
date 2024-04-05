@@ -1,0 +1,65 @@
+- It is used to access things of the parent class of the class you're working on.
+
+Example:
+
+    public class Animal {
+
+        int age;
+        String name;
+
+        public Animal() {}
+
+        public void makeNoise() {
+            System.out.println("I make noise");
+        }
+
+    }
+
+    public class Cat extends Animal {
+
+        String catFood;
+
+        @Override
+        public void makeNoise() {
+            super.makeNoise(); // Calls the 'makeNoise' method from the Animal class.
+            System.out.println("meow"); // Own implementation
+        }
+
+    }
+
+IN A CONSTRUCTOR:
+
+    public class Animal {
+
+        int age;
+        String name;
+
+        public Animal() {}
+
+        public Animal(int age, String name) {
+            this.age = age;
+            this.name = name;
+        }
+
+        public void makeNoise() {
+            System.out.println("I make noise");
+        }
+
+    }
+
+    public class Cat extends Animal {
+
+        String catFood;
+
+        public Cat(int age, String name, String food) {
+            super(age, name); // MUST BE THE FIRST LINE
+            this.catFood = food;
+        }
+
+        @Override
+        public void makeNoise() {
+            super.makeNoise(); // Calls the 'makeNoise' method from the Animal class.
+            System.out.println("meow"); // Own implementation
+        }
+
+    }
